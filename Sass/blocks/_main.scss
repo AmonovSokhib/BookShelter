@@ -1,0 +1,223 @@
+.results_pages{
+    width: 100%;
+    // padding: 0 20px;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+transition: background 0.2s linear; 
+margin-bottom: 0;
+    
+}
+.results{
+    margin-left: 356px;
+    margin-right: 500px;
+}
+.calendar{
+    width: 170px;
+    height: 34px;
+    display: flex;
+   align-items: center;
+    background: #A6B0C3;
+    border-radius: 4px;
+    
+}
+.calendar__icon{
+    display: block;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+body.dark .results_pages{
+    background-color: #292c35;
+ }
+ .bookmark__page{
+   display: flex;
+   align-items: flex-start;
+   
+   flex-direction: column;
+    margin-top: 0;
+    padding: 0 25px;
+    width: 268px;
+    height: 1050px;
+    background: #FFFFFF;
+box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
+transition: background 0.2s linear;
+ }
+ .bookmark{
+    margin: 0;
+    padding-top: 25px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 24px;
+   line-height: 28px;
+   color: #000000;
+ }
+ .bookmark__title{
+    margin: 0;
+    width: 218px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 155.6%;
+    color: #000000;
+ }
+ .bookmark-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 230px;
+    height: 100px;
+    background: #F8FAFD;
+    border-radius: 4px;
+    margin: 15px 0;
+    margin-right: 100px;
+ }
+ .bookmark-item__titles{
+   width: 150px;
+ }
+ .bookmark__cards{
+   padding: 0;
+ }
+ body.dark .bookmark__page {
+    background-color: #2f3441;
+ }
+ body.dark .bookmark-item {
+    background-color: #3b4a77;
+ }
+ .item__title{
+    font-size: 'Rubik', sans-serif;
+    margin: 0 10px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+ }
+ .item__subtitle {
+    font-size: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #757881;
+    margin: 0 10px;
+
+ }
+ .item__year{
+    font-size: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #757881;
+    margin: 0 10px;
+ }
+ .delete-icon{
+    margin-right: 10px;
+ }
+
+ .section-books{
+    background: #E5E5E5;
+    transition: background 0.2s linear;
+ }
+ .book-list{
+    margin: 0;
+    padding: 0;
+    width: 991px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.book-list__item{
+    transition: background 0.2s linear;
+     margin-top: 40px;
+    width: 282px;
+    height: 452px;
+    list-style-type: none;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+ }
+ .main-section{
+    display: flex;
+ }
+ body.dark .section-books{
+    background-color: #2e3b4a;
+ }
+ body.dark .book-list__item{
+    background-color: #272e3b;
+ }
+ body.dark .list-item__img{
+    background-color: #4e1a68;
+ }
+ .list-item__img{
+    width: 249px;
+    height: 238px;
+    background: #F8FAFD;
+    border-radius: 5px;
+    margin-top: 13px;
+    margin-right: 15px;
+    margin-left: 15px;
+    transition: background 0.2s linear;
+ }
+ .item__img{
+   width: 331px;
+   height: 252px;
+   padding: 18px 28px 20px;
+ }
+ .list-item__titles{
+    padding-left: 21px;
+    margin-top: 19px;
+ }
+ .buttons{
+    margin-top: 10px;
+    padding-right: 15px;
+    padding-left: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .bookmark__btn{
+    font-family: 'Rubik';
+   width: 120px;
+   height: 37px;
+   padding: 10px 25px;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+   background: #FFD80D;
+   border-radius: 4px;
+   border: none;
+   color: #000000;
+ }
+ .more__info{
+   width: 120px;
+   height: 37px;
+   font-family: 'Rubik';
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+   padding: 9px 25px;
+   border: none;
+   background: rgba(13, 117, 255, 0.05);
+   border-radius: 4px;
+   color: #0D75FF;
+ }
+ .read__book{
+   display: block;
+    margin-left: 21px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 10px 105px;
+    width: 246px;
+    height: 37px;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+   color: #fff;
+   background: #75828A;
+   border-radius: 4px;
+ }
+ a{
+    text-decoration: none;
+ }
+ 

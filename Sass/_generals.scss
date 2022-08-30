@@ -5,6 +5,8 @@ html{
 *,*::before,*::after{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 body{
     display: flex;
@@ -12,7 +14,9 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
+    transition: background 0.2s linear;
 }
+
 main{
     flex-grow: 1;
 }
@@ -21,4 +25,75 @@ img{
     height: auto;
     vertical-align: middle;
     object-fit: cover;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    z-index: 10;
+    background-color: #fff;
+    width: 552.47px;
+    height: 1166.46px;
+}
+.modal.active{
+    transform: translateX(1%);
+    transition: transform 0.5s ease;
+}
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F8FAFD;
+}
+.modal-title{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #222531;
+}
+
+   
+
+.modal-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size:24px ;
+}
+.modal-body__title{
+    width: 470.46px;
+    height: 275.67px;
+    margin-left: 46px;
+    margin-right: 34px;
+    margin-top: 52px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #58667E;
+    font-family: 'Rubik';
+}
+#overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.5);
+    pointer-events: none;
+}
+#overlay .active{
+    opacity: 1;
+    pointer-events: all;
+}
+.pyton__book{
+    margin-top: 44px;
+    margin-left: 148px;
+    width: 228.96px;
+    height: 299.59px;
 }

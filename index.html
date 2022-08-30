@@ -4,8 +4,124 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+			integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Rubik:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>BookShelter</title>
+
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
-	<body></body>
+	<body class="dark">
+		<!-- Modal -->
+		<div class="modal modal__wrapper" id="modal"></div>
+		<!-- Header -->
+		<header class="site-header">
+			<div class="container">
+				<div class="site-nav">
+					<div class="site-nav__logo">
+						<img src="./img/logo_img.svg" alt="logo-img" />
+					</div>
+					<form class="search__input">
+						<img
+							class="search__icon"
+							src="./img/search__icon.png"
+							alt="icon__img"
+						/>
+						<input
+							class="input__search"
+							type="search"
+							placeholder="Search books"
+						/>
+						<button class="search"><p>Search</p></button>
+					</form>
+					<div>
+						<input class="checkbox" id="checkbox" type="checkbox" />
+						<label for="checkbox" class="label">
+							<i class="fas fa-moon"></i>
+							<i class="fas fa-sun"></i>
+							<span class="ball"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Main -->
+		<div class="main">
+			<div class="container">
+				<div class="results_pages">
+					<h4 class="results">
+						Showing <span class="results-number">0</span> Result(s)
+					</h4>
+					<div class="calendar">
+						<img
+							class="calendar__icon"
+							src="./img/calendar.png"
+							alt="calendar"
+						/>
+						<p>Order by newest</p>
+					</div>
+				</div>
+				<div class="main-section">
+					<div class="bookmark__page">
+						<h2 class="bookmark">Bookmarks</h2>
+						<p class="bookmark__title">
+							If you don’t like to read, you haven’t found the right book
+						</p>
+
+						<ul class="bookmark__cards bookmark__wrapper"></ul>
+					</div>
+
+					<div class="section-books">
+						<ul class="book-list"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<template id="bookTemp">
+			<li class="book-list__item">
+				<div class="list-item__img">
+					<img class="item__img" src="./img/book__img.png" alt="book-img" />
+				</div>
+				<div class="list-item__titles">
+					<p class="item__title">Python</p>
+					<h5 class="item__subtitle">David M. Beazley</h5>
+					<h5 class="item__year">2009</h5>
+				</div>
+
+				<div class="buttons">
+					<button class="bookmark__btn">Bookmark</button>
+					<button class="more__info">More Info</button>
+				</div>
+				<a class="read__book" href="#">Read</a>
+			</li>
+		</template>
+
+		<template id="bookmarkTemp">
+			<li class="bookmark-item">
+				<div class="bookmark-item__titles">
+					<p class="item__title">Python</p>
+					<h5 class="item__subtitle">David M. Beazley</h5>
+				</div>
+				<a class="book-open" href="#"
+					><img src="./img/book-open.png" alt="book-open"
+				/></a>
+				<img class="delete-icon" src="./img/delete.png" alt="delete-icon" />
+			</li>
+		</template>
+
+		<script src="./js/main.js"></script>
+	</body>
 </html>
